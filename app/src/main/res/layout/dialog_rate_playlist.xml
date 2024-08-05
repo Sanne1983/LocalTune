@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bewerte die Playlist"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:textSize="18sp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:stepSize="1.0" />
+
+    <EditText
+        android:id="@+id/edit_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kommentar hinzufügen"
+        android:inputType="textMultiLine"
+        android:gravity="top"/>
+
+    <Button
+        android:id="@+id/button_submit_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bewertung senden"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
